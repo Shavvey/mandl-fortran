@@ -16,3 +16,7 @@ $(EXEC): $(OBJS)
 
 %.o: %.f95
 	$(FC) -c -o $@ $< $(FFLAGS)
+
+.PHONY: clean
+clean:
+	rm $(OBJS) $(EXEC)
