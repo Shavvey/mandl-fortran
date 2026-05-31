@@ -1,11 +1,7 @@
-subroutine helloworld(x)
-  character(len=*), intent(in) :: x
-  print *, x
-end subroutine helloworld
-
-
-program hello
-  implicit none
-  call helloworld("Hello, World!")
-end program hello
-
+program mandl
+  use complex_mod
+  type(Comp) :: c = Comp(3, 4)
+  real :: mag  = 0
+  mag = magnitude(c)
+  print "(A, F6.2)", "Value:", mag
+end program mandl

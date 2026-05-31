@@ -1,4 +1,6 @@
 # ignore any object files on any path
 **/*.o
+# ignore any modules files created gfortran
+**/*.mod
 # ignore final produced exec in top-level dir
 mandl
